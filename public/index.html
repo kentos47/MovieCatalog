@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог фильмов и сериалов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>🎬 Каталог фильмов и сериалов</h1>
+
+    <form id="movieForm">
+        <input type="text" id="title" placeholder="Название" required>
+
+        <select id="type" required>
+            <option value="film">Фильм</option>
+            <option value="serial">Сериал</option>
+        </select>
+
+        <div id="filmYearField">
+            <input type="number" id="year" placeholder="Год выпуска" min="1900" max="2026" step="1">
+        </div>
+        <div id="serialYearFields" style="display: none;">
+            <input type="number" id="year_start" placeholder="Год начала" min="1900" step="1">
+            <input type="number" id="year_end" placeholder="Год окончания (опционально)" step="1">
+        </div>
+
+        <input type="text" id="genre" placeholder="Жанр" required>
+
+        <select id="status" required>
+            <option value="В планах">В планах</option>
+            <option value="Просмотрено">Просмотрено</option>
+        </select>
+
+        <div id="ratingField" style="display: none;">
+            <input type="number" id="rating" placeholder="Оценка (1-10)" min="1" max="10">
+        </div>
+        <div id="dateField" style="display: none;">
+            <input type="text" id="watch_date" placeholder="ДД/ММ/ГГГГ" autocomplete="off">
+        </div>
+
+        <button type="submit">➕ Добавить</button>
+    </form>
+
+    <div id="errorMsg" style="color: red; margin-top: 10px;"></div>
+    <div id="movieList" class="movie-list"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
