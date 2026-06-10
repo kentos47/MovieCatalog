@@ -1,105 +1,124 @@
 * {
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
 }
 body {
-    background: #f0f2f5;
-    margin: 0;
-    padding: 20px;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: white;
-    border-radius: 24px;
-    padding: 24px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 h1 {
-    font-size: 1.8rem;
-    text-align: center;
-    color: #1e1e2f;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #1e1e2f;
 }
 form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 30px;
-    align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+  align-items: flex-start;
 }
-form input, form select, form button {
-    padding: 10px 14px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    font-size: 1rem;
-    flex: 1 1 auto;
-    min-width: 120px;
+form input,
+form select,
+form button {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  flex: 1 1 auto;
+  min-width: 120px;
 }
 form button {
-    background: #2c7da0;
-    color: white;
-    border: none;
-    cursor: pointer;
-    flex: 0 1 auto;
+  background: #2c7da0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  flex: 0 1 auto;
 }
 form button:hover {
-    background: #1f5e7a;
+  background: #1f5e7a;
 }
-#filmYearField, #serialYearFields, #ratingField, #dateField {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
+#filmYearField,
+#serialYearFields,
+#ratingField,
+#dateField {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
 }
-#rating, #watch_date {
-    flex: 1 1 auto;
-    min-width: 120px;
-    padding: 10px 14px;
-    font-size: 1rem;
+#rating,
+#watch_date {
+  flex: 1 1 auto;
+  min-width: 120px;
+  padding: 10px 14px;
+  font-size: 1rem;
 }
 .movie-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .movie-card {
-    background: #f9f9fc;
-    border-left: 6px solid #2c7da0;
-    padding: 12px 20px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    word-break: break-word;
+  background: #f9f9fc;
+  border-left: 6px solid #2c7da0;
+  padding: 12px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  word-break: break-word;
 }
 .movie-info {
-    flex: 1;
-    margin-right: 12px;
+  flex: 1;
+  margin-right: 12px;
 }
 .movie-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
 .movie-details {
-    font-size: 0.9rem;
-    color: #555;
-    line-height: 1.4;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
 }
 .delete-btn {
-    background: #e74c3c;
-    border: none;
-    color: white;
-    padding: 6px 14px;
-    border-radius: 30px;
-    cursor: pointer;
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 .delete-btn:hover {
-    background: #c0392b;
+  background: #c0392b;
 }
 @media (max-width: 768px) {
-    .container { padding: 16px; }
-    .movie-card { flex-direction: column; align-items: flex-start; }
-    .delete-btn { margin-top: 8px; align-self: flex-end; }
+  .container {
+    padding: 16px;
+  }
+  .movie-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .delete-btn {
+    margin-top: 8px;
+    align-self: flex-end;
+  }
 }
