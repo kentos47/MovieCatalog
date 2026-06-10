@@ -19,3 +19,11 @@
 - **Запуск**:
   - `npm install`
   - `npm start` – запускает сервер на `http://localhost:3000`
+  
+## Запуск через Docker
+
+- Собрать образ:
+   ```bash
+   docker build -t movie-catalog .
+   
+- docker run -p 3000:3000 movie-catalog
