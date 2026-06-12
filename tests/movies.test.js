@@ -9,8 +9,9 @@ app.use(bodyParser.json());
 app.use("/api/v1/movies", moviesRouter);
 
 beforeEach((done) => {
-  db.run("DELETE FROM movies", () => {
-    db.run('DELETE FROM sqlite_sequence WHERE name = "movies"', done);
+  db.run("DELETE FROM movies", (err) => {
+    if (err) return done(err);
+    done();
   });
 });
 
