@@ -8,6 +8,26 @@ const app = express();
 app.use(bodyParser.json());
 app.use("/api/v1/movies", moviesRouter);
 
+const waitForTable = () => {
+  return new Promise((resolve, reject) => {
+    const interval = setInterval(() => {
+      db.get("SELECT name FROM sqlite_master WHERE type='table' AND name='movies'", (err, row) => {
+        if (err) {
+          clearInterval(interval);
+          reject(err);
+        } else if (row) {
+          clearInterval(interval);
+          resolve();
+        }
+      });
+    }, 50);
+  });
+};
+
+beforeAll(async () => {
+  await waitForTable();
+});
+
 beforeEach((done) => {
   db.run("DELETE FROM movies", (err) => {
     if (err) return done(err);
