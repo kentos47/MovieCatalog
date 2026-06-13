@@ -25,7 +25,6 @@ All responses are returned in JSON format: `{ success: boolean, data: any, error
 
 **Project structure:**
 
-
 ```movie-catalog/
 ├── .github/
 │   └── workflows/
@@ -51,7 +50,6 @@ All responses are returned in JSON format: `{ success: boolean, data: any, error
 └── server.js
 ```
 
-
 **Key features:**
 
 - **Input validation** (year, rating, date format) — the server checks that the year is between 1900 and the current year, the rating is between 1 and 10, the date is in DD/MM/YYYY format and not later than today.
@@ -76,18 +74,18 @@ npm test
 - **This command runs all tests (Jest). Results are printed to the console.**
 
 ## 5. Security
+
 **Measures taken:**
 
 - **XSS: HTML escaping on the frontend.**
 - **SQL injection: parameterized queries.**
 - **Validation: server-side validation of all fields.**
 - **Dependency analysis:**
-        ```
-        npm audit --production in CI
-        ```
-        Trivy (HW7) — 0 vulnerabilities in dependencies.
+  `      npm audit --production in CI`
+  Trivy (HW7) — 0 vulnerabilities in dependencies.
 
 ## 6. CI
+
 **The .github/workflows/ci.yml file runs the following checks on every PR to main:**
 
 - **Linter and formatter: ESLint + Prettier.**
@@ -127,4 +125,3 @@ docker run -p 3000:3000 movie-catalog
 # 3. Open in the browser
 # http://localhost:3000
 ```
-
