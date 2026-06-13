@@ -78,19 +78,21 @@ npm test
 ## 5. Security
 **Measures taken:**
 
-    - **XSS: HTML escaping on the frontend.**
-    - **SQL injection: parameterized queries.**
-    - **Validation: server-side validation of all fields.**
-    - **Dependency analysis:**
-        ```npm audit --production in CI```
+- **XSS: HTML escaping on the frontend.**
+- **SQL injection: parameterized queries.**
+- **Validation: server-side validation of all fields.**
+- **Dependency analysis:**
+        ```
+        npm audit --production in CI
+        ```
         Trivy (HW7) — 0 vulnerabilities in dependencies.
 
 ## 6. CI
 **The .github/workflows/ci.yml file runs the following checks on every PR to main:**
 
-    - **Linter and formatter: ESLint + Prettier.**
-    - **Tests: npm test.**
-    - **Security: npm audit --production.**
+- **Linter and formatter: ESLint + Prettier.**
+- **Tests: npm test.**
+- **Security: npm audit --production.**
 
 **All checks must be green before a PR can be merged.**
 
