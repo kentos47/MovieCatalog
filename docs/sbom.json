@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "name": "movie-catalog",
+  "dependencies": {
+    "body-parser": {
+      "version": "1.20.5",
+      "resolved": "https://registry.npmjs.org/body-parser/-/body-parser-1.20.5.tgz",
+      "overridden": false
+    },
+    "eslint-plugin-security": {
+      "version": "4.0.1",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-security/-/eslint-plugin-security-4.0.1.tgz",
+      "overridden": false
+    },
+    "eslint": {
+      "version": "8.57.1",
+      "resolved": "https://registry.npmjs.org/eslint/-/eslint-8.57.1.tgz",
+      "overridden": false
+    },
+    "express": {
+      "version": "4.22.2",
+      "resolved": "https://registry.npmjs.org/express/-/express-4.22.2.tgz",
+      "overridden": false
+    },
+    "jest": {
+      "version": "30.4.2",
+      "resolved": "https://registry.npmjs.org/jest/-/jest-30.4.2.tgz",
+      "overridden": false
+    },
+    "nodemon": {
+      "version": "3.1.14",
+      "resolved": "https://registry.npmjs.org/nodemon/-/nodemon-3.1.14.tgz",
+      "overridden": false
+    },
+    "prettier": {
+      "version": "3.8.4",
+      "resolved": "https://registry.npmjs.org/prettier/-/prettier-3.8.4.tgz",
+      "overridden": false
+    },
+    "sqlite3": {
+      "version": "6.0.1",
+      "resolved": "https://registry.npmjs.org/sqlite3/-/sqlite3-6.0.1.tgz",
+      "overridden": false
+    },
+    "supertest": {
+      "version": "7.2.2",
+      "resolved": "https://registry.npmjs.org/supertest/-/supertest-7.2.2.tgz",
+      "overridden": false
+    }
+  }
+}
