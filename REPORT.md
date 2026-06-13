@@ -96,3 +96,35 @@ npm test
 
 **All checks must be green before a PR can be merged.**
 
+## 7. How to Run
+
+**Locally**
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/kentos47/MovieCatalog.git
+cd MovieCatalog
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the server
+npm start
+
+# 4. Open in the browser
+# http://localhost:3000
+```
+
+**Using Docker**
+
+```bash
+# 1. Build the image
+docker build -t movie-catalog .
+
+# 2. Run the container
+docker run -p 3000:3000 movie-catalog
+
+# 3. Open in the browser
+# http://localhost:3000
+```
+
