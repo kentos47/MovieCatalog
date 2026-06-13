@@ -25,8 +25,8 @@ All responses are returned in JSON format: `{ success: boolean, data: any, error
 
 **Project structure:**
 
-text ```
-movie-catalog/
+
+```movie-catalog/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
