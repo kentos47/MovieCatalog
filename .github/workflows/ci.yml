@@ -35,3 +35,15 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm audit --production
+  sca:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          scanners: 'vuln'
+          severity: 'CRITICAL,HIGH'
+          format: 'table'
